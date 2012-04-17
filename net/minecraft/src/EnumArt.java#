@@ -1,0 +1,72 @@
+***************
+*** 40,46 ****
+      public final int field_1634_B;
+      public final int field_1632_C;
+      private static final EnumArt field_1630_D[]; /* synthetic field */
+- 
+      public static final EnumArt[] values()
+      {
+          return (EnumArt[])field_1630_D.clone();
+--- 66,72 ----
+      public final int field_1634_B;
+      public final int field_1632_C;
+      private static final EnumArt field_1630_D[]; /* synthetic field */
++ /*
+      public static final EnumArt[] values()
+      {
+          return (EnumArt[])field_1630_D.clone();
+***************
+*** 50,59 ****
+      {
+          return (EnumArt)Enum.valueOf(net.minecraft.src.EnumArt.class, s);
+      }
+- 
+      private EnumArt(String s, int i, String s1, int j, int k, int l, int i1)
+      {
+-         super(s, i);
+          field_1624_y = s1;
+          field_1623_z = j;
+          field_1636_A = k;
+--- 76,85 ----
+      {
+          return (EnumArt)Enum.valueOf(net.minecraft.src.EnumArt.class, s);
+      }
++ */
+      private EnumArt(String s, int i, String s1, int j, int k, int l, int i1)
+      {
++ //        super(s, i);
+          field_1624_y = s1;
+          field_1623_z = j;
+          field_1636_A = k;
+***************
+*** 63,68 ****
+  
+      static 
+      {
+          Kebab = new EnumArt("Kebab", 0, "Kebab", 16, 16, 0, 0);
+          Aztec = new EnumArt("Aztec", 1, "Aztec", 16, 16, 16, 0);
+          Alban = new EnumArt("Alban", 2, "Alban", 16, 16, 32, 0);
+--- 89,95 ----
+  
+      static 
+      {
++ /*
+          Kebab = new EnumArt("Kebab", 0, "Kebab", 16, 16, 0, 0);
+          Aztec = new EnumArt("Aztec", 1, "Aztec", 16, 16, 16, 0);
+          Alban = new EnumArt("Alban", 2, "Alban", 16, 16, 32, 0);
+***************
+*** 88,93 ****
+          BurningSkull = new EnumArt("BurningSkull", 22, "BurningSkull", 64, 64, 128, 192);
+          Skeleton = new EnumArt("Skeleton", 23, "Skeleton", 64, 48, 192, 64);
+          DonkeyKong = new EnumArt("DonkeyKong", 24, "DonkeyKong", 64, 48, 192, 112);
+          field_1630_D = (new EnumArt[] {
+              Kebab, Aztec, Alban, Aztec2, Bomb, Plant, Wasteland, Pool, Courbet, Sea, 
+              Sunset, Creebet, Wanderer, Graham, Match, Bust, Stage, Void, SkullAndRoses, Fighters, 
+--- 115,121 ----
+          BurningSkull = new EnumArt("BurningSkull", 22, "BurningSkull", 64, 64, 128, 192);
+          Skeleton = new EnumArt("Skeleton", 23, "Skeleton", 64, 48, 192, 64);
+          DonkeyKong = new EnumArt("DonkeyKong", 24, "DonkeyKong", 64, 48, 192, 112);
++ */
+          field_1630_D = (new EnumArt[] {
+              Kebab, Aztec, Alban, Aztec2, Bomb, Plant, Wasteland, Pool, Courbet, Sea, 
+              Sunset, Creebet, Wanderer, Graham, Match, Bust, Stage, Void, SkullAndRoses, Fighters, 

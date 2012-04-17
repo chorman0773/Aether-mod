@@ -1,0 +1,75 @@
+***************
+*** 19,26 ****
+      public static final EnumEnchantmentType armor_head;
+      public static final EnumEnchantmentType weapon;
+      public static final EnumEnchantmentType digger;
+      private static final EnumEnchantmentType field_40659_i[]; /* synthetic field */
+- 
+      public static final EnumEnchantmentType[] values()
+      {
+          return (EnumEnchantmentType[])field_40659_i.clone();
+--- 27,35 ----
+      public static final EnumEnchantmentType armor_head;
+      public static final EnumEnchantmentType weapon;
+      public static final EnumEnchantmentType digger;
++ */
+      private static final EnumEnchantmentType field_40659_i[]; /* synthetic field */
++ /*
+      public static final EnumEnchantmentType[] values()
+      {
+          return (EnumEnchantmentType[])field_40659_i.clone();
+***************
+*** 30,39 ****
+      {
+          return (EnumEnchantmentType)Enum.valueOf(net.minecraft.src.EnumEnchantmentType.class, s);
+      }
+- 
+      private EnumEnchantmentType(String s, int i)
+      {
+-         super(s, i);
+      }
+  
+      public boolean func_40650_a(Item item)
+--- 39,48 ----
+      {
+          return (EnumEnchantmentType)Enum.valueOf(net.minecraft.src.EnumEnchantmentType.class, s);
+      }
++ */
+      private EnumEnchantmentType(String s, int i)
+      {
++ //        super(s, i);
+      }
+  
+      public boolean func_40650_a(Item item)
+***************
+*** 84,89 ****
+  
+      static 
+      {
+          all = new EnumEnchantmentType("all", 0);
+          armor = new EnumEnchantmentType("armor", 1);
+          armor_feet = new EnumEnchantmentType("armor_feet", 2);
+--- 93,99 ----
+  
+      static 
+      {
++ /*
+          all = new EnumEnchantmentType("all", 0);
+          armor = new EnumEnchantmentType("armor", 1);
+          armor_feet = new EnumEnchantmentType("armor_feet", 2);
+***************
+*** 92,97 ****
+          armor_head = new EnumEnchantmentType("armor_head", 5);
+          weapon = new EnumEnchantmentType("weapon", 6);
+          digger = new EnumEnchantmentType("digger", 7);
+          field_40659_i = (new EnumEnchantmentType[] {
+              all, armor, armor_feet, armor_legs, armor_torso, armor_head, weapon, digger
+          });
+--- 102,108 ----
+          armor_head = new EnumEnchantmentType("armor_head", 5);
+          weapon = new EnumEnchantmentType("weapon", 6);
+          digger = new EnumEnchantmentType("digger", 7);
++ */
+          field_40659_i = (new EnumEnchantmentType[] {
+              all, armor, armor_feet, armor_legs, armor_torso, armor_head, weapon, digger
+          });

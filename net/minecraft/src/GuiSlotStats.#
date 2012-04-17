@@ -1,0 +1,19 @@
+***************
+*** 25,32 ****
+  
+      protected GuiSlotStats(GuiStats guistats)
+      {
+-         field_27269_g = guistats;
+          super(GuiStats.func_27143_f(guistats), guistats.field_951_c, guistats.field_950_d, 32, guistats.field_950_d - 64, 20);
+          field_27268_b = -1;
+          field_27271_e = -1;
+          field_27270_f = 0;
+--- 25,32 ----
+  
+      protected GuiSlotStats(GuiStats guistats)
+      {
+          super(GuiStats.func_27143_f(guistats), guistats.field_951_c, guistats.field_950_d, 32, guistats.field_950_d - 64, 20);
++         field_27269_g = guistats;
+          field_27268_b = -1;
+          field_27271_e = -1;
+          field_27270_f = 0;

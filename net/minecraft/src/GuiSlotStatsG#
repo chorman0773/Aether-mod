@@ -1,0 +1,19 @@
+***************
+*** 17,24 ****
+  
+      public GuiSlotStatsGeneral(GuiStats guistats)
+      {
+-         field_27276_a = guistats;
+          super(GuiStats.func_27141_a(guistats), guistats.field_951_c, guistats.field_950_d, 32, guistats.field_950_d - 64, 10);
+          func_27258_a(false);
+      }
+  
+--- 17,24 ----
+  
+      public GuiSlotStatsGeneral(GuiStats guistats)
+      {
+          super(GuiStats.func_27141_a(guistats), guistats.field_951_c, guistats.field_950_d, 32, guistats.field_950_d - 64, 10);
++         field_27276_a = guistats;
+          func_27258_a(false);
+      }
+  

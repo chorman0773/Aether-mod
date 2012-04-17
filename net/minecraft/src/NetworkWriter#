@@ -1,0 +1,102 @@
+***************
+*** 17,24 ****
+  
+      NetworkWriterThread(NetworkManager networkmanager, String s)
+      {
+-         field_1063_a = networkmanager;
+          super(s);
+      }
+  
+      public void run()
+--- 17,24 ----
+  
+      NetworkWriterThread(NetworkManager networkmanager, String s)
+      {
+          super(s);
++         field_1063_a = networkmanager;
+      }
+  
+      public void run()
+***************
+*** 27,67 ****
+          {
+              NetworkManager.field_1476_c++;
+          }
+-         while(NetworkManager.func_971_a(field_1063_a)) 
+          {
+-             while(NetworkManager.func_965_d(field_1063_a)) ;
+-             try
+              {
+-                 if(NetworkManager.func_28140_f(field_1063_a) != null)
+                  {
+-                     NetworkManager.func_28140_f(field_1063_a).flush();
+                  }
+-             }
+-             catch(IOException ioexception)
+-             {
+-                 if(!NetworkManager.func_28138_e(field_1063_a))
+                  {
+-                     NetworkManager.func_30005_a(field_1063_a, ioexception);
+                  }
+-                 ioexception.printStackTrace();
+-             }
+-             try
+-             {
+-                 sleep(2L);
+              }
+-             catch(InterruptedException interruptedexception) { }
+          }
+-         synchronized(NetworkManager.field_1478_a)
+          {
+-             NetworkManager.field_1476_c--;
+-         }
+-         break MISSING_BLOCK_LABEL_167;
+-         Exception exception2;
+-         exception2;
+-         synchronized(NetworkManager.field_1478_a)
+-         {
+-             NetworkManager.field_1476_c--;
+          }
+-         throw exception2;
+      }
+  }
+--- 27,65 ----
+          {
+              NetworkManager.field_1476_c++;
+          }
++         try
+          {
++             while(NetworkManager.func_971_a(field_1063_a)) 
+              {
++                 while(NetworkManager.func_965_d(field_1063_a)) ;
++                 try
+                  {
++                     if(NetworkManager.func_28140_f(field_1063_a) != null)
++                     {
++                         NetworkManager.func_28140_f(field_1063_a).flush();
++                     }
+                  }
++                 catch(IOException ioexception)
+                  {
++                     if(!NetworkManager.func_28138_e(field_1063_a))
++                     {
++                         NetworkManager.func_30005_a(field_1063_a, ioexception);
++                     }
++                     ioexception.printStackTrace();
+                  }
++                 try
++                 {
++                     sleep(2L);
++                 }
++                 catch(InterruptedException interruptedexception) { }
+              }
+          }
++         finally
+          {
++             synchronized(NetworkManager.field_1478_a)
++             {
++                 NetworkManager.field_1476_c--;
++             }
+          }
+      }
+  }

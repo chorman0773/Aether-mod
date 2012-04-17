@@ -1,0 +1,19 @@
+***************
+*** 19,26 ****
+  
+      public GuiWorldSlot(GuiSelectWorld guiselectworld)
+      {
+-         field_22266_a = guiselectworld;
+          super(guiselectworld.field_945_b, guiselectworld.field_951_c, guiselectworld.field_950_d, 32, guiselectworld.field_950_d - 64, 36);
+      }
+  
+      protected int func_22249_a()
+--- 19,26 ----
+  
+      public GuiWorldSlot(GuiSelectWorld guiselectworld)
+      {
+          super(guiselectworld.field_945_b, guiselectworld.field_951_c, guiselectworld.field_950_d, 32, guiselectworld.field_950_d - 64, 36);
++         field_22266_a = guiselectworld;
+      }
+  
+      protected int func_22249_a()

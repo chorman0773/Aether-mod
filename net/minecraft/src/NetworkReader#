@@ -1,0 +1,72 @@
+***************
+*** 15,22 ****
+  
+      NetworkReaderThread(NetworkManager networkmanager, String s)
+      {
+-         field_1085_a = networkmanager;
+          super(s);
+      }
+  
+      public void run()
+--- 15,22 ----
+  
+      NetworkReaderThread(NetworkManager networkmanager, String s)
+      {
+          super(s);
++         field_1085_a = networkmanager;
+      }
+  
+      public void run()
+***************
+*** 25,50 ****
+          {
+              NetworkManager.field_1477_b++;
+          }
+-         while(NetworkManager.func_971_a(field_1085_a) && !NetworkManager.func_968_b(field_1085_a)) 
+          {
+-             while(NetworkManager.func_966_c(field_1085_a)) ;
+-             try
+              {
+-                 sleep(2L);
+              }
+-             catch(InterruptedException interruptedexception) { }
+-         }
+-         synchronized(NetworkManager.field_1478_a)
+-         {
+-             NetworkManager.field_1477_b--;
+          }
+-         break MISSING_BLOCK_LABEL_131;
+-         Exception exception2;
+-         exception2;
+-         synchronized(NetworkManager.field_1478_a)
+          {
+-             NetworkManager.field_1477_b--;
+          }
+-         throw exception2;
+      }
+  }
+--- 25,48 ----
+          {
+              NetworkManager.field_1477_b++;
+          }
++         try
+          {
++             while(NetworkManager.func_971_a(field_1085_a) && !NetworkManager.func_968_b(field_1085_a)) 
+              {
++                 while(NetworkManager.func_966_c(field_1085_a)) ;
++                 try
++                 {
++                     sleep(2L);
++                 }
++                 catch(InterruptedException interruptedexception) { }
+              }
+          }
++         finally
+          {
++             synchronized(NetworkManager.field_1478_a)
++             {
++                 NetworkManager.field_1477_b--;
++             }
+          }
+      }
+  }

@@ -1,0 +1,17 @@
+***************
+*** 16,22 ****
+      ThreadCloseConnection(NetworkManager networkmanager)
+      {
+          field_28109_a = networkmanager;
+-         super();
+      }
+  
+      public void run()
+--- 16,22 ----
+      ThreadCloseConnection(NetworkManager networkmanager)
+      {
+          field_28109_a = networkmanager;
++ //        super();
+      }
+  
+      public void run()

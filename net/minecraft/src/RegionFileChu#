@@ -1,0 +1,19 @@
+***************
+*** 18,25 ****
+  
+      public RegionFileChunkBuffer(RegionFile regionfile, int i, int j)
+      {
+-         field_22284_a = regionfile;
+          super(8096);
+          field_22283_b = i;
+          field_22285_c = j;
+      }
+--- 18,25 ----
+  
+      public RegionFileChunkBuffer(RegionFile regionfile, int i, int j)
+      {
+          super(8096);
++         field_22284_a = regionfile;
+          field_22283_b = i;
+          field_22285_c = j;
+      }

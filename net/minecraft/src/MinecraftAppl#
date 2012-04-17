@@ -1,0 +1,19 @@
+***************
+*** 18,25 ****
+  
+      public MinecraftAppletImpl(MinecraftApplet minecraftapplet, Component component, Canvas canvas, MinecraftApplet minecraftapplet1, int i, int j, boolean flag)
+      {
+-         field_186_a = minecraftapplet;
+          super(component, canvas, minecraftapplet1, i, j, flag);
+      }
+  
+      public void func_4007_a(UnexpectedThrowable unexpectedthrowable)
+--- 18,25 ----
+  
+      public MinecraftAppletImpl(MinecraftApplet minecraftapplet, Component component, Canvas canvas, MinecraftApplet minecraftapplet1, int i, int j, boolean flag)
+      {
+          super(component, canvas, minecraftapplet1, i, j, flag);
++         field_186_a = minecraftapplet;
+      }
+  
+      public void func_4007_a(UnexpectedThrowable unexpectedthrowable)

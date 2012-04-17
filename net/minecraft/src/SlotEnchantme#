@@ -1,0 +1,19 @@
+***************
+*** 15,22 ****
+  
+      SlotEnchantmentTable(ContainerEnchantment containerenchantment, String s, int i)
+      {
+-         field_40070_a = containerenchantment;
+          super(s, i);
+      }
+  
+      public int func_470_e()
+--- 15,22 ----
+  
+      SlotEnchantmentTable(ContainerEnchantment containerenchantment, String s, int i)
+      {
+          super(s, i);
++         field_40070_a = containerenchantment;
+      }
+  
+      public int func_470_e()

@@ -1,0 +1,17 @@
+***************
+*** 18,24 ****
+      J_JsonNodeList(Iterable iterable)
+      {
+          field_27405_a = iterable;
+-         super();
+          J_JsonNode j_jsonnode;
+          for(Iterator iterator = field_27405_a.iterator(); iterator.hasNext(); add(j_jsonnode))
+          {
+--- 18,24 ----
+      J_JsonNodeList(Iterable iterable)
+      {
+          field_27405_a = iterable;
++ //        super();
+          J_JsonNode j_jsonnode;
+          for(Iterator iterator = field_27405_a.iterator(); iterator.hasNext(); add(j_jsonnode))
+          {

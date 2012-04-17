@@ -1,0 +1,19 @@
+***************
+*** 17,24 ****
+  
+      public GuiSlotStatsBlock(GuiStats guistats)
+      {
+-         field_27274_a = guistats;
+          super(guistats);
+          field_27273_c = new ArrayList();
+          Iterator iterator = StatList.field_25185_d.iterator();
+          do
+--- 17,24 ----
+  
+      public GuiSlotStatsBlock(GuiStats guistats)
+      {
+          super(guistats);
++         field_27274_a = guistats;
+          field_27273_c = new ArrayList();
+          Iterator iterator = StatList.field_25185_d.iterator();
+          do

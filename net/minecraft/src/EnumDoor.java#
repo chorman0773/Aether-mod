@@ -1,0 +1,79 @@
+***************
+*** 5,19 ****
+  package net.minecraft.src;
+  
+  
+- public final class EnumDoor extends Enum
+  {
+- 
+      public static final EnumDoor OPENING;
+      public static final EnumDoor WOOD_DOOR;
+      public static final EnumDoor GRATES;
+      public static final EnumDoor IRON_DOOR;
+      private static final EnumDoor field_35825_e[]; /* synthetic field */
+- 
+      public static final EnumDoor[] values()
+      {
+          return (EnumDoor[])field_35825_e.clone();
+--- 5,24 ----
+  package net.minecraft.src;
+  
+  
++ public enum EnumDoor
+  {
++     OPENING("OPENING", 0),
++     WOOD_DOOR("WOOD_DOOR", 1),
++     GRATES("GRATES", 2),
++     IRON_DOOR("IRON_DOOR", 3);
++ /*
+      public static final EnumDoor OPENING;
+      public static final EnumDoor WOOD_DOOR;
+      public static final EnumDoor GRATES;
+      public static final EnumDoor IRON_DOOR;
++ */
+      private static final EnumDoor field_35825_e[]; /* synthetic field */
++ /*
+      public static final EnumDoor[] values()
+      {
+          return (EnumDoor[])field_35825_e.clone();
+***************
+*** 23,40 ****
+      {
+          return (EnumDoor)Enum.valueOf(net.minecraft.src.EnumDoor.class, s);
+      }
+- 
+      private EnumDoor(String s, int i)
+      {
+-         super(s, i);
+      }
+  
+      static 
+      {
+          OPENING = new EnumDoor("OPENING", 0);
+          WOOD_DOOR = new EnumDoor("WOOD_DOOR", 1);
+          GRATES = new EnumDoor("GRATES", 2);
+          IRON_DOOR = new EnumDoor("IRON_DOOR", 3);
+          field_35825_e = (new EnumDoor[] {
+              OPENING, WOOD_DOOR, GRATES, IRON_DOOR
+          });
+--- 28,47 ----
+      {
+          return (EnumDoor)Enum.valueOf(net.minecraft.src.EnumDoor.class, s);
+      }
++ */
+      private EnumDoor(String s, int i)
+      {
++ //        super(s, i);
+      }
+  
+      static 
+      {
++ /*
+          OPENING = new EnumDoor("OPENING", 0);
+          WOOD_DOOR = new EnumDoor("WOOD_DOOR", 1);
+          GRATES = new EnumDoor("GRATES", 2);
+          IRON_DOOR = new EnumDoor("IRON_DOOR", 3);
++ */
+          field_35825_e = (new EnumDoor[] {
+              OPENING, WOOD_DOOR, GRATES, IRON_DOOR
+          });

@@ -1,0 +1,17 @@
+***************
+*** 19,25 ****
+      {
+          field_27232_b = statssyncher;
+          field_27233_a = map;
+-         super();
+      }
+  
+      public void run()
+--- 19,25 ----
+      {
+          field_27232_b = statssyncher;
+          field_27233_a = map;
++ //        super();
+      }
+  
+      public void run()

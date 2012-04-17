@@ -1,0 +1,17 @@
+***************
+*** 21,27 ****
+      public MapInfo(MapData mapdata, EntityPlayer entityplayer)
+      {
+          field_28123_d = mapdata;
+-         super();
+          field_28119_b = new int[128];
+          field_28124_c = new int[128];
+          field_28122_e = 0;
+--- 21,27 ----
+      public MapInfo(MapData mapdata, EntityPlayer entityplayer)
+      {
+          field_28123_d = mapdata;
++ //        super();
+          field_28119_b = new int[128];
+          field_28124_c = new int[128];
+          field_28122_e = 0;

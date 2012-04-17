@@ -1,0 +1,19 @@
+***************
+*** 19,26 ****
+  
+      public GuiSlotServer(GuiMultiplayer guimultiplayer)
+      {
+-         field_35410_a = guimultiplayer;
+          super(guimultiplayer.field_945_b, guimultiplayer.field_951_c, guimultiplayer.field_950_d, 32, guimultiplayer.field_950_d - 64, 36);
+      }
+  
+      protected int func_22249_a()
+--- 19,26 ----
+  
+      public GuiSlotServer(GuiMultiplayer guimultiplayer)
+      {
+          super(guimultiplayer.field_945_b, guimultiplayer.field_951_c, guimultiplayer.field_950_d, 32, guimultiplayer.field_950_d - 64, 36);
++         field_35410_a = guimultiplayer;
+      }
+  
+      protected int func_22249_a()

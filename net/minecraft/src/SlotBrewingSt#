@@ -1,0 +1,19 @@
+***************
+*** 17,24 ****
+  
+      public SlotBrewingStandPotion(ContainerBrewingStand containerbrewingstand, EntityPlayer entityplayer, IInventory iinventory, int i, int j, int k)
+      {
+-         field_40441_a = containerbrewingstand;
+          super(iinventory, i, j, k);
+          field_40440_f = entityplayer;
+      }
+  
+--- 17,24 ----
+  
+      public SlotBrewingStandPotion(ContainerBrewingStand containerbrewingstand, EntityPlayer entityplayer, IInventory iinventory, int i, int j, int k)
+      {
+          super(iinventory, i, j, k);
++         field_40441_a = containerbrewingstand;
+          field_40440_f = entityplayer;
+      }
+  

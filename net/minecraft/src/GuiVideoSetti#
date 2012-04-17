@@ -1,0 +1,40 @@
+***************
+*** 34,40 ****
+          StringTranslate stringtranslate = StringTranslate.func_20162_a();
+          field_22107_a = stringtranslate.func_20163_a("options.videoTitle");
+          int i = 0;
+-         Object aobj[] = field_22108_k;
+          int j = aobj.length;
+          for(int k = 0; k < j; k++)
+          {
+--- 34,40 ----
+          StringTranslate stringtranslate = StringTranslate.func_20162_a();
+          field_22107_a = stringtranslate.func_20163_a("options.videoTitle");
+          int i = 0;
++         EnumOptions aobj[] = field_22108_k;
+          int j = aobj.length;
+          for(int k = 0; k < j; k++)
+          {
+***************
+*** 51,60 ****
+  
+          field_949_e.add(new GuiButton(200, field_951_c / 2 - 100, field_950_d / 6 + 168, stringtranslate.func_20163_a("gui.done")));
+          field_40231_d = false;
+-         aobj = (new String[] {
+              "sun.arch.data.model", "com.ibm.vm.bitmode", "os.arch"
+          });
+-         String as[] = ((String []) (aobj));
+          int l = as.length;
+          int i1 = 0;
+          do
+--- 51,60 ----
+  
+          field_949_e.add(new GuiButton(200, field_951_c / 2 - 100, field_950_d / 6 + 168, stringtranslate.func_20163_a("gui.done")));
+          field_40231_d = false;
++         String[] aobja = (new String[] {
+              "sun.arch.data.model", "com.ibm.vm.bitmode", "os.arch"
+          });
++         String as[] = ((String []) (aobja));
+          int l = as.length;
+          int i1 = 0;
+          do

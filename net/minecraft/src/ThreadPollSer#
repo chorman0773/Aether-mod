@@ -1,0 +1,17 @@
+***************
+*** 20,26 ****
+      {
+          field_35600_b = guislotserver;
+          field_35601_a = servernbtstorage;
+-         super();
+      }
+  
+      public void run()
+--- 20,26 ----
+      {
+          field_35600_b = guislotserver;
+          field_35601_a = servernbtstorage;
++ //        super();
+      }
+  
+      public void run()

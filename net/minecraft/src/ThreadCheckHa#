@@ -1,0 +1,17 @@
+***************
+*** 19,25 ****
+      public ThreadCheckHasPaid(Minecraft minecraft)
+      {
+          field_28146_a = minecraft;
+-         super();
+      }
+  
+      public void run()
+--- 19,25 ----
+      public ThreadCheckHasPaid(Minecraft minecraft)
+      {
+          field_28146_a = minecraft;
++ //        super();
+      }
+  
+      public void run()

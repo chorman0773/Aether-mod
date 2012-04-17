@@ -1,0 +1,74 @@
+***************
+*** 5,18 ****
+  package net.minecraft.src;
+  
+  
+- public final class EnumCreatureAttribute extends Enum
+  {
+- 
+      public static final EnumCreatureAttribute UNDEFINED;
+      public static final EnumCreatureAttribute UNDEAD;
+      public static final EnumCreatureAttribute ARTHROPOD;
+      private static final EnumCreatureAttribute field_40586_d[]; /* synthetic field */
+- 
+      public static final EnumCreatureAttribute[] values()
+      {
+          return (EnumCreatureAttribute[])field_40586_d.clone();
+--- 5,22 ----
+  package net.minecraft.src;
+  
+  
++ public enum EnumCreatureAttribute
+  {
++     UNDEFINED("UNDEFINED", 0),
++     UNDEAD("UNDEAD", 1),
++     ARTHROPOD("ARTHROPOD", 2);
++ /*
+      public static final EnumCreatureAttribute UNDEFINED;
+      public static final EnumCreatureAttribute UNDEAD;
+      public static final EnumCreatureAttribute ARTHROPOD;
++ */
+      private static final EnumCreatureAttribute field_40586_d[]; /* synthetic field */
++ /*
+      public static final EnumCreatureAttribute[] values()
+      {
+          return (EnumCreatureAttribute[])field_40586_d.clone();
+***************
+*** 22,38 ****
+      {
+          return (EnumCreatureAttribute)Enum.valueOf(net.minecraft.src.EnumCreatureAttribute.class, s);
+      }
+- 
+      private EnumCreatureAttribute(String s, int i)
+      {
+-         super(s, i);
+      }
+  
+      static 
+      {
+          UNDEFINED = new EnumCreatureAttribute("UNDEFINED", 0);
+          UNDEAD = new EnumCreatureAttribute("UNDEAD", 1);
+          ARTHROPOD = new EnumCreatureAttribute("ARTHROPOD", 2);
+          field_40586_d = (new EnumCreatureAttribute[] {
+              UNDEFINED, UNDEAD, ARTHROPOD
+          });
+--- 26,44 ----
+      {
+          return (EnumCreatureAttribute)Enum.valueOf(net.minecraft.src.EnumCreatureAttribute.class, s);
+      }
++ */
+      private EnumCreatureAttribute(String s, int i)
+      {
++ //        super(s, i);
+      }
+  
+      static 
+      {
++ /*
+          UNDEFINED = new EnumCreatureAttribute("UNDEFINED", 0);
+          UNDEAD = new EnumCreatureAttribute("UNDEAD", 1);
+          ARTHROPOD = new EnumCreatureAttribute("ARTHROPOD", 2);
++ */
+          field_40586_d = (new EnumCreatureAttribute[] {
+              UNDEFINED, UNDEAD, ARTHROPOD
+          });

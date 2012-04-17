@@ -1,0 +1,17 @@
+***************
+*** 16,22 ****
+      NetworkMasterThread(NetworkManager networkmanager)
+      {
+          field_1086_a = networkmanager;
+-         super();
+      }
+  
+      public void run()
+--- 16,22 ----
+      NetworkMasterThread(NetworkManager networkmanager)
+      {
+          field_1086_a = networkmanager;
++ //        super();
+      }
+  
+      public void run()

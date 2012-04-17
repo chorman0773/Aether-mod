@@ -1,0 +1,21 @@
+***************
+*** 17,25 ****
+  
+      SlotArmor(ContainerPlayer containerplayer, IInventory iinventory, int i, int j, int k, int l)
+      {
+          field_1123_d = containerplayer;
+          field_1124_c = l;
+-         super(iinventory, i, j, k);
+      }
+  
+      public int func_4104_e()
+--- 17,25 ----
+  
+      SlotArmor(ContainerPlayer containerplayer, IInventory iinventory, int i, int j, int k, int l)
+      {
++         super(iinventory, i, j, k);
+          field_1123_d = containerplayer;
+          field_1124_c = l;
+      }
+  
+      public int func_4104_e()

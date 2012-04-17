@@ -1,0 +1,17 @@
+***************
+*** 15,21 ****
+      public CanvasMinecraftApplet(MinecraftApplet minecraftapplet)
+      {
+          field_1696_a = minecraftapplet;
+-         super();
+      }
+  
+      public synchronized void addNotify()
+--- 15,21 ----
+      public CanvasMinecraftApplet(MinecraftApplet minecraftapplet)
+      {
+          field_1696_a = minecraftapplet;
++ //        super();
+      }
+  
+      public synchronized void addNotify()

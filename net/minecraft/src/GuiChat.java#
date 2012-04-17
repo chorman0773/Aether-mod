@@ -1,0 +1,70 @@
+***************
+*** 87,128 ****
+  
+      protected void func_565_a(int i, int j, int k)
+      {
+          if(k != 0)
+          {
+-             break MISSING_BLOCK_LABEL_139;
+          }
+          if(field_945_b.field_6308_u.field_933_a == null)
+          {
+-             break MISSING_BLOCK_LABEL_132;
+          }
+-         if(field_985_a.length() <= 0 || field_985_a.endsWith(" ")) goto _L2; else goto _L1
+- _L1:
+-         new StringBuilder();
+-         this;
+-         JVM INSTR dup_x1 ;
+-         field_985_a;
+-         append();
+-         " ";
+-         append();
+-         toString();
+-         field_985_a;
+- _L2:
+-         new StringBuilder();
+-         this;
+-         JVM INSTR dup_x1 ;
+-         field_985_a;
+-         append();
+-         field_945_b.field_6308_u.field_933_a;
+-         append();
+-         toString();
+-         field_985_a;
+          byte byte0 = 100;
+          if(field_985_a.length() > byte0)
+          {
+              field_985_a = field_985_a.substring(0, byte0);
+          }
+-         break MISSING_BLOCK_LABEL_139;
+-         super.func_565_a(i, j, k);
+      }
+  
+      static 
+--- 79,103 ----
+  
+      protected void func_565_a(int i, int j, int k)
+      {
++         super.func_565_a(i, j, k);
+          if(k != 0)
+          {
++             return;
+          }
+          if(field_945_b.field_6308_u.field_933_a == null)
+          {
++             return;
+          }
++         if(field_985_a.length() > 0 && !field_985_a.endsWith(" "))
++         {
++             field_985_a += " ";
++         }
++         field_985_a += field_945_b.field_6308_u.field_933_a;
+          byte byte0 = 100;
+          if(field_985_a.length() > byte0)
+          {
+              field_985_a = field_985_a.substring(0, byte0);
+          }
+      }
+  
+      static 

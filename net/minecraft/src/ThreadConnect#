@@ -1,0 +1,17 @@
+***************
+*** 26,32 ****
+          field_1102_a = minecraft;
+          field_1101_b = s;
+          field_1104_c = i;
+-         super();
+      }
+  
+      public void run()
+--- 26,32 ----
+          field_1102_a = minecraft;
+          field_1101_b = s;
+          field_1104_c = i;
++ //        super();
+      }
+  
+      public void run()

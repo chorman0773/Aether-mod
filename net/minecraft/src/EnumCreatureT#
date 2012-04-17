@@ -1,0 +1,89 @@
+***************
+*** 8,25 ****
+  // Referenced classes of package net.minecraft.src:
+  //            IMob, Material, EntityAnimal, EntityWaterMob
+  
+- public final class EnumCreatureType extends Enum
+  {
+- 
+      public static final EnumCreatureType monster;
+      public static final EnumCreatureType creature;
+      public static final EnumCreatureType waterCreature;
+      private final Class field_4278_c;
+      private final int field_4277_d;
+      private final Material field_21173_f;
+      private final boolean field_21172_g;
+      private static final EnumCreatureType field_6518_e[]; /* synthetic field */
+- 
+      public static final EnumCreatureType[] values()
+      {
+          return (EnumCreatureType[])field_6518_e.clone();
+--- 8,29 ----
+  // Referenced classes of package net.minecraft.src:
+  //            IMob, Material, EntityAnimal, EntityWaterMob
+  
++ public enum EnumCreatureType
+  {
++     monster("monster", 0, net.minecraft.src.IMob.class, 70, Material.field_1337_a, false),
++     creature("creature", 1, net.minecraft.src.EntityAnimal.class, 15, Material.field_1337_a, true),
++     waterCreature("waterCreature", 2, net.minecraft.src.EntityWaterMob.class, 5, Material.field_1332_f, true);
++ /*
+      public static final EnumCreatureType monster;
+      public static final EnumCreatureType creature;
+      public static final EnumCreatureType waterCreature;
++ */
+      private final Class field_4278_c;
+      private final int field_4277_d;
+      private final Material field_21173_f;
+      private final boolean field_21172_g;
+      private static final EnumCreatureType field_6518_e[]; /* synthetic field */
++ /*
+      public static final EnumCreatureType[] values()
+      {
+          return (EnumCreatureType[])field_6518_e.clone();
+***************
+*** 29,38 ****
+      {
+          return (EnumCreatureType)Enum.valueOf(net.minecraft.src.EnumCreatureType.class, s);
+      }
+- 
+      private EnumCreatureType(String s, int i, Class class1, int j, Material material, boolean flag)
+      {
+-         super(s, i);
+          field_4278_c = class1;
+          field_4277_d = j;
+          field_21173_f = material;
+--- 33,42 ----
+      {
+          return (EnumCreatureType)Enum.valueOf(net.minecraft.src.EnumCreatureType.class, s);
+      }
++ */
+      private EnumCreatureType(String s, int i, Class class1, int j, Material material, boolean flag)
+      {
++ //        super(s, i);
+          field_4278_c = class1;
+          field_4277_d = j;
+          field_21173_f = material;
+***************
+*** 61,69 ****
+  
+      static 
+      {
+          monster = new EnumCreatureType("monster", 0, net.minecraft.src.IMob.class, 70, Material.field_1337_a, false);
+          creature = new EnumCreatureType("creature", 1, net.minecraft.src.EntityAnimal.class, 15, Material.field_1337_a, true);
+          waterCreature = new EnumCreatureType("waterCreature", 2, net.minecraft.src.EntityWaterMob.class, 5, Material.field_1332_f, true);
+          field_6518_e = (new EnumCreatureType[] {
+              monster, creature, waterCreature
+          });
+--- 65,75 ----
+  
+      static 
+      {
++ /*
+          monster = new EnumCreatureType("monster", 0, net.minecraft.src.IMob.class, 70, Material.field_1337_a, false);
+          creature = new EnumCreatureType("creature", 1, net.minecraft.src.EntityAnimal.class, 15, Material.field_1337_a, true);
+          waterCreature = new EnumCreatureType("waterCreature", 2, net.minecraft.src.EntityWaterMob.class, 5, Material.field_1332_f, true);
++ */
+          field_6518_e = (new EnumCreatureType[] {
+              monster, creature, waterCreature
+          });

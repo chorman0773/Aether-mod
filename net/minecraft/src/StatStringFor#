@@ -1,0 +1,17 @@
+***************
+*** 18,24 ****
+      public StatStringFormatKeyInv(Minecraft minecraft)
+      {
+          field_27344_a = minecraft;
+-         super();
+      }
+  
+      public String func_27343_a(String s)
+--- 18,24 ----
+      public StatStringFormatKeyInv(Minecraft minecraft)
+      {
+          field_27344_a = minecraft;
++ //        super();
+      }
+  
+      public String func_27343_a(String s)

@@ -1,0 +1,19 @@
+***************
+*** 19,26 ****
+  
+      public GuiTexturePackSlot(GuiTexturePacks guitexturepacks)
+      {
+-         field_22265_a = guitexturepacks;
+          super(GuiTexturePacks.func_22124_a(guitexturepacks), guitexturepacks.field_951_c, guitexturepacks.field_950_d, 32, (guitexturepacks.field_950_d - 55) + 4, 36);
+      }
+  
+      protected int func_22249_a()
+--- 19,26 ----
+  
+      public GuiTexturePackSlot(GuiTexturePacks guitexturepacks)
+      {
+          super(GuiTexturePacks.func_22124_a(guitexturepacks), guitexturepacks.field_951_c, guitexturepacks.field_950_d, 32, (guitexturepacks.field_950_d - 55) + 4, 36);
++         field_22265_a = guitexturepacks;
+      }
+  
+      protected int func_22249_a()

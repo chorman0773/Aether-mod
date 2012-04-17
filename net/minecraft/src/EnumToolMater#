@@ -1,0 +1,101 @@
+***************
+*** 5,25 ****
+  package net.minecraft.src;
+  
+  
+- public final class EnumToolMaterial extends Enum
+  {
+- 
+      public static final EnumToolMaterial WOOD;
+      public static final EnumToolMaterial STONE;
+      public static final EnumToolMaterial IRON;
+      public static final EnumToolMaterial EMERALD;
+      public static final EnumToolMaterial GOLD;
+      private final int field_21213_f;
+      private final int field_21212_g;
+      private final float field_21211_h;
+      private final int field_21210_i;
+      private final int field_40732_j;
+      private static final EnumToolMaterial field_21209_j[]; /* synthetic field */
+- 
+      public static final EnumToolMaterial[] values()
+      {
+          return (EnumToolMaterial[])field_21209_j.clone();
+--- 5,31 ----
+  package net.minecraft.src;
+  
+  
++ public enum EnumToolMaterial
+  {
++     WOOD("WOOD", 0, 0, 59, 2.0F, 0, 15),
++     STONE("STONE", 1, 1, 131, 4F, 1, 5),
++     IRON("IRON", 2, 2, 250, 6F, 2, 14),
++     EMERALD("EMERALD", 3, 3, 1561, 8F, 3, 10),
++     GOLD("GOLD", 4, 0, 32, 12F, 0, 22);
++ /*
+      public static final EnumToolMaterial WOOD;
+      public static final EnumToolMaterial STONE;
+      public static final EnumToolMaterial IRON;
+      public static final EnumToolMaterial EMERALD;
+      public static final EnumToolMaterial GOLD;
++ */
+      private final int field_21213_f;
+      private final int field_21212_g;
+      private final float field_21211_h;
+      private final int field_21210_i;
+      private final int field_40732_j;
+      private static final EnumToolMaterial field_21209_j[]; /* synthetic field */
++ /*
+      public static final EnumToolMaterial[] values()
+      {
+          return (EnumToolMaterial[])field_21209_j.clone();
+***************
+*** 29,38 ****
+      {
+          return (EnumToolMaterial)Enum.valueOf(net.minecraft.src.EnumToolMaterial.class, s);
+      }
+- 
+      private EnumToolMaterial(String s, int i, int j, int k, float f, int l, int i1)
+      {
+-         super(s, i);
+          field_21213_f = j;
+          field_21212_g = k;
+          field_21211_h = f;
+--- 35,44 ----
+      {
+          return (EnumToolMaterial)Enum.valueOf(net.minecraft.src.EnumToolMaterial.class, s);
+      }
++ */
+      private EnumToolMaterial(String s, int i, int j, int k, float f, int l, int i1)
+      {
++ //        super(s, i);
+          field_21213_f = j;
+          field_21212_g = k;
+          field_21211_h = f;
+***************
+*** 67,77 ****
+  
+      static 
+      {
+          WOOD = new EnumToolMaterial("WOOD", 0, 0, 59, 2.0F, 0, 15);
+          STONE = new EnumToolMaterial("STONE", 1, 1, 131, 4F, 1, 5);
+          IRON = new EnumToolMaterial("IRON", 2, 2, 250, 6F, 2, 14);
+          EMERALD = new EnumToolMaterial("EMERALD", 3, 3, 1561, 8F, 3, 10);
+          GOLD = new EnumToolMaterial("GOLD", 4, 0, 32, 12F, 0, 22);
+          field_21209_j = (new EnumToolMaterial[] {
+              WOOD, STONE, IRON, EMERALD, GOLD
+          });
+--- 73,85 ----
+  
+      static 
+      {
++ /*
+          WOOD = new EnumToolMaterial("WOOD", 0, 0, 59, 2.0F, 0, 15);
+          STONE = new EnumToolMaterial("STONE", 1, 1, 131, 4F, 1, 5);
+          IRON = new EnumToolMaterial("IRON", 2, 2, 250, 6F, 2, 14);
+          EMERALD = new EnumToolMaterial("EMERALD", 3, 3, 1561, 8F, 3, 10);
+          GOLD = new EnumToolMaterial("GOLD", 4, 0, 32, 12F, 0, 22);
++ */
+          field_21209_j = (new EnumToolMaterial[] {
+              WOOD, STONE, IRON, EMERALD, GOLD
+          });

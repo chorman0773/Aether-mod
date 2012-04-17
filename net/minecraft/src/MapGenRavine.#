@@ -1,0 +1,25 @@
+***************
+*** 84,94 ****
+              {
+                  continue;
+              }
+-             d8 = MathHelper.func_1108_b(d - d6) - i * 16 - 1;
+              int l1 = (MathHelper.func_1108_b(d + d6) - i * 16) + 1;
+-             d9 = MathHelper.func_1108_b(d1 - d7) - 1;
+              int i2 = MathHelper.func_1108_b(d1 + d7) + 1;
+-             d10 = MathHelper.func_1108_b(d2 - d6) - j * 16 - 1;
+              int j2 = (MathHelper.func_1108_b(d2 + d6) - j * 16) + 1;
+              if(d8 < 0)
+              {
+--- 84,94 ----
+              {
+                  continue;
+              }
++             int d8 = MathHelper.func_1108_b(d - d6) - i * 16 - 1;
+              int l1 = (MathHelper.func_1108_b(d + d6) - i * 16) + 1;
++             int d9 = MathHelper.func_1108_b(d1 - d7) - 1;
+              int i2 = MathHelper.func_1108_b(d1 + d7) + 1;
++             int d10 = MathHelper.func_1108_b(d2 - d6) - j * 16 - 1;
+              int j2 = (MathHelper.func_1108_b(d2 + d6) - j * 16) + 1;
+              if(d8 < 0)
+              {

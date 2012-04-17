@@ -1,0 +1,75 @@
+***************
+*** 25,35 ****
+      public static final EnumOptions GUI_SCALE;
+      public static final EnumOptions RENDER_CLOUDS;
+      public static final EnumOptions PARTICLES;
+      private final boolean field_20144_k;
+      private final boolean field_20143_l;
+      private final String field_20142_m;
+      private static final EnumOptions field_20141_n[]; /* synthetic field */
+- 
+      public static final EnumOptions[] values()
+      {
+          return (EnumOptions[])field_20141_n.clone();
+--- 42,53 ----
+      public static final EnumOptions GUI_SCALE;
+      public static final EnumOptions RENDER_CLOUDS;
+      public static final EnumOptions PARTICLES;
++ */
+      private final boolean field_20144_k;
+      private final boolean field_20143_l;
+      private final String field_20142_m;
+      private static final EnumOptions field_20141_n[]; /* synthetic field */
++ /*
+      public static final EnumOptions[] values()
+      {
+          return (EnumOptions[])field_20141_n.clone();
+***************
+*** 59,65 ****
+  
+      private EnumOptions(String s, int i, String s1, boolean flag, boolean flag1)
+      {
+-         super(s, i);
+          field_20142_m = s1;
+          field_20144_k = flag;
+          field_20143_l = flag1;
+--- 77,83 ----
+  
+      private EnumOptions(String s, int i, String s1, boolean flag, boolean flag1)
+      {
++ //        super(s, i);
+          field_20142_m = s1;
+          field_20144_k = flag;
+          field_20143_l = flag1;
+***************
+*** 87,92 ****
+  
+      static 
+      {
+          MUSIC = new EnumOptions("MUSIC", 0, "options.music", true, false);
+          SOUND = new EnumOptions("SOUND", 1, "options.sound", true, false);
+          INVERT_MOUSE = new EnumOptions("INVERT_MOUSE", 2, "options.invertMouse", false, true);
+--- 105,111 ----
+  
+      static 
+      {
++ /*
+          MUSIC = new EnumOptions("MUSIC", 0, "options.music", true, false);
+          SOUND = new EnumOptions("SOUND", 1, "options.sound", true, false);
+          INVERT_MOUSE = new EnumOptions("INVERT_MOUSE", 2, "options.invertMouse", false, true);
+***************
+*** 104,109 ****
+          GUI_SCALE = new EnumOptions("GUI_SCALE", 14, "options.guiScale", false, false);
+          RENDER_CLOUDS = new EnumOptions("RENDER_CLOUDS", 15, "options.renderClouds", false, true);
+          PARTICLES = new EnumOptions("PARTICLES", 16, "options.particles", false, false);
+          field_20141_n = (new EnumOptions[] {
+              MUSIC, SOUND, INVERT_MOUSE, SENSITIVITY, FOV, GAMMA, RENDER_DISTANCE, VIEW_BOBBING, ANAGLYPH, ADVANCED_OPENGL, 
+              FRAMERATE_LIMIT, DIFFICULTY, GRAPHICS, AMBIENT_OCCLUSION, GUI_SCALE, RENDER_CLOUDS, PARTICLES
+--- 123,129 ----
+          GUI_SCALE = new EnumOptions("GUI_SCALE", 14, "options.guiScale", false, false);
+          RENDER_CLOUDS = new EnumOptions("RENDER_CLOUDS", 15, "options.renderClouds", false, true);
+          PARTICLES = new EnumOptions("PARTICLES", 16, "options.particles", false, false);
++ */
+          field_20141_n = (new EnumOptions[] {
+              MUSIC, SOUND, INVERT_MOUSE, SENSITIVITY, FOV, GAMMA, RENDER_DISTANCE, VIEW_BOBBING, ANAGLYPH, ADVANCED_OPENGL, 
+              FRAMERATE_LIMIT, DIFFICULTY, GRAPHICS, AMBIENT_OCCLUSION, GUI_SCALE, RENDER_CLOUDS, PARTICLES

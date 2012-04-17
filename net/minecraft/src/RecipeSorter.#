@@ -1,0 +1,17 @@
+***************
+*** 18,24 ****
+      RecipeSorter(CraftingManager craftingmanager)
+      {
+          field_1557_a = craftingmanager;
+-         super();
+      }
+  
+      public int func_1040_a(IRecipe irecipe, IRecipe irecipe1)
+--- 18,24 ----
+      RecipeSorter(CraftingManager craftingmanager)
+      {
+          field_1557_a = craftingmanager;
++ //        super();
+      }
+  
+      public int func_1040_a(IRecipe irecipe, IRecipe irecipe1)

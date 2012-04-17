@@ -1,0 +1,17 @@
+***************
+*** 18,24 ****
+      {
+          field_1587_a = minecraft;
+          field_1586_b = thread;
+-         super();
+      }
+  
+      public void windowClosing(WindowEvent windowevent)
+--- 18,24 ----
+      {
+          field_1587_a = minecraft;
+          field_1586_b = thread;
++ //        super();
+      }
+  
+      public void windowClosing(WindowEvent windowevent)

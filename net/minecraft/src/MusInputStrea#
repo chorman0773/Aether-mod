@@ -1,0 +1,57 @@
+***************
+*** 4,9 ****
+  
+  package net.minecraft.src;
+  
+  import java.io.InputStream;
+  import java.net.URL;
+  
+--- 4,10 ----
+  
+  package net.minecraft.src;
+  
++ import java.io.IOException;
+  import java.io.InputStream;
+  import java.net.URL;
+  
+***************
+*** 21,27 ****
+      public MusInputStream(CodecMus codecmus, URL url, InputStream inputstream)
+      {
+          field_1513_b = codecmus;
+-         super();
+          field_1514_a = new byte[1];
+          field_1515_d = inputstream;
+          String s = url.getPath();
+--- 22,28 ----
+      public MusInputStream(CodecMus codecmus, URL url, InputStream inputstream)
+      {
+          field_1513_b = codecmus;
++ //        super();
+          field_1514_a = new byte[1];
+          field_1515_d = inputstream;
+          String s = url.getPath();
+***************
+*** 43,49 ****
+  
+      public int read(byte abyte0[], int i, int j)
+      {
+-         j = field_1515_d.read(abyte0, i, j);
+          for(int k = 0; k < j; k++)
+          {
+              byte byte0 = abyte0[i + k] ^= field_1516_c >> 8;
+--- 44,57 ----
+  
+      public int read(byte abyte0[], int i, int j)
+      {
++         try
++         {
++             j = field_1515_d.read(abyte0, i, j);
++         }
++         catch (IOException e)
++         {
++             return 0;
++         }
+          for(int k = 0; k < j; k++)
+          {
+              byte byte0 = abyte0[i + k] ^= field_1516_c >> 8;

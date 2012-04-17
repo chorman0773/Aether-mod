@@ -1,0 +1,68 @@
+***************
+*** 15,22 ****
+      public static final EnumJsonNodeType TRUE;
+      public static final EnumJsonNodeType FALSE;
+      public static final EnumJsonNodeType NULL;
+      private static final EnumJsonNodeType field_27442_h[]; /* synthetic field */
+- 
+      public static final EnumJsonNodeType[] values()
+      {
+          return (EnumJsonNodeType[])field_27442_h.clone();
+--- 22,30 ----
+      public static final EnumJsonNodeType TRUE;
+      public static final EnumJsonNodeType FALSE;
+      public static final EnumJsonNodeType NULL;
++ */
+      private static final EnumJsonNodeType field_27442_h[]; /* synthetic field */
++ /*
+      public static final EnumJsonNodeType[] values()
+      {
+          return (EnumJsonNodeType[])field_27442_h.clone();
+***************
+*** 26,39 ****
+      {
+          return (EnumJsonNodeType)Enum.valueOf(net.minecraft.src.EnumJsonNodeType.class, s);
+      }
+- 
+      private EnumJsonNodeType(String s, int i)
+      {
+-         super(s, i);
+      }
+  
+      static 
+      {
+          OBJECT = new EnumJsonNodeType("OBJECT", 0);
+          ARRAY = new EnumJsonNodeType("ARRAY", 1);
+          STRING = new EnumJsonNodeType("STRING", 2);
+--- 34,48 ----
+      {
+          return (EnumJsonNodeType)Enum.valueOf(net.minecraft.src.EnumJsonNodeType.class, s);
+      }
++ */
+      private EnumJsonNodeType(String s, int i)
+      {
++ //        super(s, i);
+      }
+  
+      static 
+      {
++ /*
+          OBJECT = new EnumJsonNodeType("OBJECT", 0);
+          ARRAY = new EnumJsonNodeType("ARRAY", 1);
+          STRING = new EnumJsonNodeType("STRING", 2);
+***************
+*** 41,46 ****
+          TRUE = new EnumJsonNodeType("TRUE", 4);
+          FALSE = new EnumJsonNodeType("FALSE", 5);
+          NULL = new EnumJsonNodeType("NULL", 6);
+          field_27442_h = (new EnumJsonNodeType[] {
+              OBJECT, ARRAY, STRING, NUMBER, TRUE, FALSE, NULL
+          });
+--- 50,56 ----
+          TRUE = new EnumJsonNodeType("TRUE", 4);
+          FALSE = new EnumJsonNodeType("FALSE", 5);
+          NULL = new EnumJsonNodeType("NULL", 6);
++ */
+          field_27442_h = (new EnumJsonNodeType[] {
+              OBJECT, ARRAY, STRING, NUMBER, TRUE, FALSE, NULL
+          });

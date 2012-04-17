@@ -1,0 +1,17 @@
+***************
+*** 17,23 ****
+      J_JsonElementNodeSelector(int i)
+      {
+          field_27069_a = i;
+-         super();
+      }
+  
+      public boolean func_27067_a(List list)
+--- 17,23 ----
+      J_JsonElementNodeSelector(int i)
+      {
+          field_27069_a = i;
++ //        super();
+      }
+  
+      public boolean func_27067_a(List list)

@@ -1,0 +1,17 @@
+***************
+*** 22,28 ****
+      public BiomeCacheBlock(BiomeCache biomecache, int i, int j)
+      {
+          field_35654_g = biomecache;
+-         super();
+          field_35659_a = new float[256];
+          field_35657_b = new float[256];
+          field_35658_c = new BiomeGenBase[256];
+--- 22,28 ----
+      public BiomeCacheBlock(BiomeCache biomecache, int i, int j)
+      {
+          field_35654_g = biomecache;
++ //        super();
+          field_35659_a = new float[256];
+          field_35657_b = new float[256];
+          field_35658_c = new BiomeGenBase[256];

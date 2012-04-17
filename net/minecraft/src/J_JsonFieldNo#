@@ -1,0 +1,17 @@
+***************
+*** 17,23 ****
+      J_JsonFieldNodeSelector(J_JsonStringNode j_jsonstringnode)
+      {
+          field_27066_a = j_jsonstringnode;
+-         super();
+      }
+  
+      public boolean func_27065_a(Map map)
+--- 17,23 ----
+      J_JsonFieldNodeSelector(J_JsonStringNode j_jsonstringnode)
+      {
+          field_27066_a = j_jsonstringnode;
++ //        super();
+      }
+  
+      public boolean func_27065_a(Map map)

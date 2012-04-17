@@ -1,0 +1,17 @@
+***************
+*** 24,30 ****
+      public RailLogic(BlockRail blockrail, World world, int i, int j, int k)
+      {
+          field_1160_a = blockrail;
+-         super();
+          field_1161_g = new ArrayList();
+          field_1159_b = world;
+          field_1165_c = i;
+--- 24,30 ----
+      public RailLogic(BlockRail blockrail, World world, int i, int j, int k)
+      {
+          field_1160_a = blockrail;
++ //        super();
+          field_1161_g = new ArrayList();
+          field_1159_b = world;
+          field_1165_c = i;

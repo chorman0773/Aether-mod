@@ -1,0 +1,17 @@
+***************
+*** 23,29 ****
+          field_1217_c = threaddownloadimagedata;
+          field_1216_a = s;
+          field_1215_b = imagebuffer;
+-         super();
+      }
+  
+      public void run()
+--- 23,29 ----
+          field_1217_c = threaddownloadimagedata;
+          field_1216_a = s;
+          field_1215_b = imagebuffer;
++ //        super();
+      }
+  
+      public void run()

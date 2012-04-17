@@ -1,0 +1,17 @@
+***************
+*** 21,27 ****
+      {
+          field_27372_b = guislotstatsitem;
+          field_27373_a = guistats;
+-         super();
+      }
+  
+      public int func_27371_a(StatCrafting statcrafting, StatCrafting statcrafting1)
+--- 21,27 ----
+      {
+          field_27372_b = guislotstatsitem;
+          field_27373_a = guistats;
++ //        super();
+      }
+  
+      public int func_27371_a(StatCrafting statcrafting, StatCrafting statcrafting1)

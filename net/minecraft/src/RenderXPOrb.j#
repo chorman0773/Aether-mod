@@ -1,0 +1,27 @@
+***************
+*** 39,50 ****
+          float f6 = 1.0F;
+          float f7 = 0.5F;
+          float f8 = 0.25F;
+-         float f9 = entityxporb.func_35115_a(f1);
+-         float f10 = f9 % 0x10000;
+-         int j = f9 / 0x10000;
+          OpenGlHelper.func_40454_a(OpenGlHelper.field_40455_b, (float)f10 / 1.0F, (float)j / 1.0F);
+          GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+-         f9 = 255F;
+          f10 = ((float)entityxporb.field_35127_a + f1) / 2.0F;
+          j = (int)((MathHelper.func_1106_a(f10 + 0.0F) + 1.0F) * 0.5F * f9);
+          int k = (int)f9;
+--- 39,50 ----
+          float f6 = 1.0F;
+          float f7 = 0.5F;
+          float f8 = 0.25F;
++         int f9a = entityxporb.func_35115_a(f1);
++         float f10 = f9a % 0x10000;
++         int j = f9a / 0x10000;
+          OpenGlHelper.func_40454_a(OpenGlHelper.field_40455_b, (float)f10 / 1.0F, (float)j / 1.0F);
+          GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
++         float f9 = 255F;
+          f10 = ((float)entityxporb.field_35127_a + f1) / 2.0F;
+          j = (int)((MathHelper.func_1106_a(f10 + 0.0F) + 1.0F) * 0.5F * f9);
+          int k = (int)f9;

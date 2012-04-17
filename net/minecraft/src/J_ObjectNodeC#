@@ -1,0 +1,17 @@
+***************
+*** 20,26 ****
+      {
+          field_27295_b = j_jsonlistenertojdomadapter;
+          field_27296_a = j_jsonobjectnodebuilder;
+-         super();
+      }
+  
+      public void func_27290_a(J_JsonNodeBuilder j_jsonnodebuilder)
+--- 20,26 ----
+      {
+          field_27295_b = j_jsonlistenertojdomadapter;
+          field_27296_a = j_jsonobjectnodebuilder;
++ //        super();
+      }
+  
+      public void func_27290_a(J_JsonNodeBuilder j_jsonnodebuilder)
