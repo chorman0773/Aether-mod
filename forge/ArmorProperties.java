@@ -4,7 +4,6 @@
 
 package forge;
 
-
 public class ArmorProperties
 {
 
@@ -23,5 +22,12 @@ public class ArmorProperties
         allowRegularComputation = false;
         damageRemove = i;
         allowRegularComputation = flag;
+    }
+    
+    public void addEnchant(Enchantment e,Armour a){
+        
+        if(!e.allow(a))return;
+        e.installEnchant(a);
+        
     }
 }
