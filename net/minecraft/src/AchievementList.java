@@ -19,6 +19,7 @@ public class AchievementList
     public static int maxDisplayColumn;
     public static int maxDisplayRow;
     public static List achievementList;
+    
     public static Achievement openInventory;
     public static Achievement mineWood;
     public static Achievement buildWorkBench;
@@ -53,12 +54,14 @@ public class AchievementList
 
     public static void func_27374_a()
     {
+        
+    
     }
 
     static 
     {
         achievementList = new ArrayList();
-        openInventory = (new Achievement(0, "openInventory", 0, 0, Item.book, null)).setIndependent().registerAchievement();
+        openInventory = new Achievement(0, "openInventory", 0, 0, Item.book, null).setIndependent().registerAchievement();
         mineWood = (new Achievement(1, "mineWood", 2, 1, Block.wood, openInventory)).registerAchievement();
         buildWorkBench = (new Achievement(2, "buildWorkBench", 4, -1, Block.workbench, mineWood)).registerAchievement();
         buildPickaxe = (new Achievement(3, "buildPickaxe", 4, 2, Item.pickaxeWood, buildWorkBench)).registerAchievement();
@@ -85,6 +88,6 @@ public class AchievementList
         enchantments = (new Achievement(24, "enchantments", -4, 4, Block.enchantmentTable, diamonds)).registerAchievement();
         overkill = (new Achievement(25, "overkill", -4, 1, Item.swordDiamond, enchantments)).setSpecial().registerAchievement();
         bookcase = (new Achievement(26, "bookcase", -3, 6, Block.bookShelf, enchantments)).registerAchievement();
-        System.out.println((new StringBuilder()).append(achievementList.size()).append(" achievements").toString());
+        System.out.println(new StringBuilder().append(achievementList.size()).append(" achievements").toString());
     }
 }
